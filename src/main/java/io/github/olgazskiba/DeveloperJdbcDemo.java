@@ -13,8 +13,8 @@ public class DeveloperJdbcDemo {
     static final String PASSWORD = "g64gh76kod";
 
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
-        DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
+//        DriverManagerDataSource dataSource = new DriverManagerDataSource();
+//        dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver"); cтарый вариант создания драйвера
 
 //       Statement statement = null;
 //        PreparedStatement statement = null;
@@ -22,7 +22,7 @@ public class DeveloperJdbcDemo {
 
         System.out.println("Registering jdbc driver...");
 
-        Class.forName (JDBC_DRIVER);
+        Class.forName (JDBC_DRIVER); //новый вариант создания драйвера
 
         System.out.println("creating database connection...");
 
